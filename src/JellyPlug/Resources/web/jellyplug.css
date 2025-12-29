@@ -1,0 +1,3 @@
+#jellyplugConfigurationPage .inputContainer { margin-bottom: 1em; }
+#jellyplugConfigurationPage .inputLabel { display:block; margin-bottom: 0.35em; font-weight:600; }
+#jellyplugConfigurationPage textarea { min-height: 64px; }
