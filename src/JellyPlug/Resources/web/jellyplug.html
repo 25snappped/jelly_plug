@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JellyPlug</title>
+    <link rel="stylesheet" href="jellyplug.css" />
+</head>
+<body>
+    <div id="jellyplugConfigurationPage" data-role="page" class="page type-interior pluginConfigurationPage" data-require="emby-button,emby-select,emby-input">
+        <div data-role="content">
+            <div class="content-primary">
+                <form id="jellyplugConfigurationForm">
+                    <h1>JellyPlug</h1>
+                    <p>Apply consistent branding across the Jellyfin web client.</p>
+
+                    <div class="inputContainer">
+                        <label class="inputLabel" for="BackgroundImageUrl">Background image URL</label>
+                        <input id="BackgroundImageUrl" name="BackgroundImageUrl" type="url" class="emby-input" placeholder="https://example.com/wallpaper.png" />
+                    </div>
+                    <div class="inputContainer">
+                        <label class="inputLabel" for="BackgroundColor">Background color</label>
+                        <input id="BackgroundColor" name="BackgroundColor" type="text" class="emby-input" placeholder="#0b1221" />
+                    </div>
+                    <div class="inputContainer">
+                        <label class="inputLabel" for="LogoUrl">Default logo URL</label>
+                        <input id="LogoUrl" name="LogoUrl" type="url" class="emby-input" placeholder="https://example.com/logo.svg" />
+                    </div>
+                    <div class="inputContainer">
+                        <label class="inputLabel" for="AccentColor">Accent color</label>
+                        <input id="AccentColor" name="AccentColor" type="text" class="emby-input" placeholder="#00a4ff" />
+                    </div>
+                    <div class="inputContainer">
+                        <label class="inputLabel" for="NeutralColor">Neutral/Border color</label>
+                        <input id="NeutralColor" name="NeutralColor" type="text" class="emby-input" placeholder="#e1e5ed" />
+                    </div>
+                    <div class="inputContainer">
+                        <label class="inputLabel" for="ButtonColor">Primary button color</label>
+                        <input id="ButtonColor" name="ButtonColor" type="text" class="emby-input" placeholder="#12b76a" />
+                    </div>
+                    <div class="inputContainer">
+                        <label class="inputLabel" for="FooterHtml">Footer editor</label>
+                        <textarea id="FooterHtml" name="FooterHtml" class="emby-input" rows="4" placeholder="Custom HTML to append to the footer"></textarea>
+                    </div>
+                    <div class="inputContainer">
+                        <label class="inputLabel" for="CustomJavaScript">Custom JavaScript</label>
+                        <textarea id="CustomJavaScript" name="CustomJavaScript" class="emby-input" rows="4" placeholder="Code injected after the UI loads"></textarea>
+                    </div>
+
+                    <fieldset>
+                        <legend>Menu editor</legend>
+                        <p>Add custom links to the navigation menu (one per line as Label|Icon class|Url|NewTab).</p>
+                        <textarea id="MenuLinks" name="MenuLinks" class="emby-input" rows="6" placeholder="Docs|fas fa-book|https://docs.example.com|true"></textarea>
+                    </fieldset>
+
+                    <div>
+                        <button is="emby-button" type="submit" class="raised emby-button">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="jellyplug.js"></script>
+</body>
+</html>

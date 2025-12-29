@@ -1,0 +1,26 @@
+{
+  "name": "JellyPlug Repository",
+  "guid": "d4a2e6be-4020-4f0a-9e8b-14cf4a3b2a6b",
+  "description": "Repository manifest for the JellyPlug branding plugin.",
+  "owner": "JellyPlug",
+  "manifestVersion": 1,
+  "plugins": [
+    {
+      "name": "JellyPlug",
+      "guid": "e83b6e61-7f54-4a2d-821a-3d0d1b0f88c7",
+      "overview": "Brand and customize the Jellyfin web UI with backgrounds, logos, colors, footers, menus, and injected scripts.",
+      "description": "Provides configurable branding assets (backgrounds, logos, accent and neutral colors) plus footer, menu, and JavaScript injection for Jellyfin without patching the upstream UI.",
+      "category": "General",
+      "versions": [
+        {
+          "version": "0.1.0",
+          "changelog": "Initial release of JellyPlug branding tools.",
+          "targetAbi": "10.9.7.0",
+          "sourceUrl": "https://example.com/releases/Jellyfin.Plugin.JellyPlug_v0.1.0.zip",
+          "checksum": "sha256:CHANGE_ME",
+          "timestamp": "2024-01-01T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}
